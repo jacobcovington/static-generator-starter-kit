@@ -1,14 +1,14 @@
 {
   "name": "static-generator-starter-kit",
   "version": "1.1.0",
-  "description": "Starter kit for building simple static sites",
+  "description": "Starter kit for building simple static sites using Markdown for the content, Handlebars for templates, a node.js local development server and rsync to publish.",
   "main": "dev.js",
   "scripts": {
     "dev": "dev.js"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/jacobcovington/static-generator-starter-kit.git"
   },
   "author": "Jacob Covington",
   "license": "BSD",

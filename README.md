@@ -1,6 +1,6 @@
 # A Simple Static Site Generator Starter-kit
 
-A small set of useful scripts for creating a static site, using markdown for the content. Intended to be extensively extended to suit your needs, this starter-kit aims only to provide the basics needed to begin rendering your own static web site.
+A small set of useful scripts for creating a static site generator, using [Markdown](https://help.github.com/articles/markdown-basics/) for the content, [Handlebars](http://handlebarsjs.com/) for templates, and [rsync](https://wiki.archlinux.org/index.php/Rsync) to publish. Intended to be extensively extended to suit your needs, this starter-kit aims only to provide the basics needed to begin rendering your own static web site.
 
 `build.js` creates a simple blog-like site of articles from the markdown files in `articles/` using handlebars template `tpl/article.hbs`, and an index page listing the articles using the template `tpl/index.hbs`.
 
