@@ -1,0 +1,42 @@
+ <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,R0lGODlhEAAQAPEAAAAAAJmZmf///wAAACH5BAkyAAMAIf8LTkVUU0NBUEUyLjADAQAAACwAAAAAEAAQAAAC5wQAAAAAAAAAAIQQQgghhBAEQQAAAQAAAAAAAAAAQAAAASAAAAAAAAAAAAIAQAAAEAAAAAAAAAAAAgBAAAAACAAAAAAAAAACAEAAABAAAAAAAAAAAAIAQAAgAAAAAAAAAAAAEAAAEAAAAAAAAAAAAAAAABAAABAAAAAAAAAAAAAAAAAQAAAQAAAAAAAAAAAAAAAAEAAAEAAAAAAAAAAAAAAAABAAABAAAAAAAAAAAAAAAAAQAAAQAAAAAAAAAAAAAAAAEAAAEBAQEBAQEBAQEBAQEBAAAAAAAAAAAAAAAAAAAAAAAAAKAAAh+QQJMgADACwAAAAAEAAQAAAC5wQAAAAAAAAAAIQQQgghhBAEQQAAAQAAAAAAAAAAQAAAASAAAAAAAAAAAAIAQAAAEAAAAAAAAAAAAgBAAAAACAAAAAAAAAACAEAAABAAAAAAAAAAAAIAQAAgAAAAAoEAAAAAEAAAEAAAAAAAAAAAAAAAABAAABAAAAAAAAAAAAAAAAAQAAAQAAAAAAAAAAAAAAAAEAAAEAAAAAAAAAAAAAAAABAAABAAAAAAAAAAAAAAAAAQAAAQAAAAAAAAAAAAAAAAEAAAEBAQEBAQEBAQEBAQEBAAAAAAAAAAAAAAAAAAAAAAAAAKAAA7">
+</head>
+<body>
+  <div class="head">
+    <div class="box">
+      <a class="logo" href="/">Home</a>
+    </div>
+  </div>
+
+  <div class="main">
+    <h1 class="title">{{title}}</h1>
+
+    {{#if gallery}}
+    <div class="gallery">
+      <div class="viewer"></div>
+      <ul class="thumbs">
+        {{#each gallery}}
+        <li class="thumb" style="background-image: url({{this}});" data-img="{{this}}"></li>
+        {{/each}}
+      </ul>
+    </div>
+    {{/if}}
+
+    <div class="content md">
+      {{{content}}}
+    </div>
+  </div>
+
+  <div class="foot">
+    <span class="copy">&copy; 2015 My Awesome Site</span>
+  </div>
+  
+  <script async src="/js/gallery.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "static-generator-starter-kit",
+  "version": "1.1.0",
+  "description": "Starter kit for building simple static sites",
+  "main": "dev.js",
+  "scripts": {
+    "dev": "dev.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Jacob Covington",
+  "license": "BSD",
+  "private": true,
+  "devDependencies": {
+    "cheerio": "^0.18.0",
+    "handlebars": "^3.0.0",
+    "html-frontmatter": "^1.3.2",
+    "markdown-it": "^4.0.0",
+    "mkdirp": "^0.5.0"
+  }
+}

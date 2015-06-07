@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}">
+  <link rel="stylesheet" href="/css/main.css">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,R0lGODlhEAAQAPEAAAAAAJmZmf///wAAACH5BAkyAAMAIf8LTkVUU0NBUEUyLjADAQAAACwAAAAAEAAQAAAC5wQAAAAAAAAAAIQQQgghhBAEQQAAAQAAAAAAAAAAQAAAASAAAAAAAAAAAAIAQAAAEAAAAAAAAAAAAgBAAAAACAAAAAAAAAACAEAAABAAAAAAAAAAAAIAQAAgAAAAAAAAAAAAEAAAEAAAAAAAAAAAAAAAABAAABAAAAAAAAAAAAAAAAAQAAAQAAAAAAAAAAAAAAAAEAAAEAAAAAAAAAAAAAAAABAAABAAAAAAAAAAAAAAAAAQAAAQAAAAAAAAAAAAAAAAEAAAEBAQEBAQEBAQEBAQEBAAAAAAAAAAAAAAAAAAAAAAAAAKAAAh+QQJMgADACwAAAAAEAAQAAAC5wQAAAAAAAAAAIQQQgghhBAEQQAAAQAAAAAAAAAAQAAAASAAAAAAAAAAAAIAQAAAEAAAAAAAAAAAAgBAAAAACAAAAAAAAAACAEAAABAAAAAAAAAAAAIAQAAgAAAAAoEAAAAAEAAAEAAAAAAAAAAAAAAAABAAABAAAAAAAAAAAAAAAAAQAAAQAAAAAAAAAAAAAAAAEAAAEAAAAAAAAAAAAAAAABAAABAAAAAAAAAAAAAAAAAQAAAQAAAAAAAAAAAAAAAAEAAAEBAQEBAQEBAQEBAQEBAAAAAAAAAAAAAAAAAAAAAAAAAKAAA7">
+</head>
+<body>
+  <div class="head">
+    <div class="box">
+      <h1 class="logo">A Static Site</h1>
+    </div>
+  </div>
+  <div class="main">
+
+    <h2 class="title">Articles:</h2>
+    <ul class="articles">
+      {{#each articles}}
+      <li>
+        <a href="{{url}}" class="name">{{title}}</a>
+        {{#if summary}}<p class="summary">{{summary}}</p>{{/if}}
+        {{#if thumb}}<a class="thumb" href="{{url}}"style="background-image: url({{thumb}})"></a>{{/if}}
+      </li>        
+      {{/each}}
+    </ul>
+  </div>
+
+  <div class="foot">
+    <span class="copy">&copy; 2015 A Static Site</span>
+  </div>
+</body>
+</html>
